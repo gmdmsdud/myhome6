@@ -16,14 +16,14 @@ export default function LayoutBannerUI() {
     <Wrapper>
       <Slider {...settings}>
         <div>
-          <SliderItem src="https://gmdmsdud.github.io/myhome5/react2.JPG" />
+          <SliderItem src="./react2.JPG" />
           
         </div>
         <div>
-          <SliderItem src="./images/layout/dockerimage2.JPG" />
+          <SliderItem src="./dockerimage2.JPG" />
         </div>
         <div>
-          <SliderItem src="./images/layout/typeimage.JPG" />
+          <SliderItem src="./typeimage.JPG" />
         </div>
       </Slider>
     </Wrapper>
