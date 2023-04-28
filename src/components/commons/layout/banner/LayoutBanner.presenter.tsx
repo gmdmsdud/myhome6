@@ -16,7 +16,7 @@ export default function LayoutBannerUI() {
     <Wrapper>
       <Slider {...settings}>
         <div>
-          <SliderItem src="./images/layout/react2.JPG" 
+          <SliderItem src="./react2.JPG" 
                             width={160}
                             height={50}
                         
