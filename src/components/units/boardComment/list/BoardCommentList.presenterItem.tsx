@@ -61,6 +61,7 @@ export default function BoardCommentListUIItem(
 
   return (
     <>
+    
       {isOpenDeleteModal && (
         <Modal visible={true} onOk={onClickDelete}>
           <div>비밀번호 입력: </div>
@@ -68,6 +69,7 @@ export default function BoardCommentListUIItem(
         </Modal>
       )}
       {!isEdit && (
+        
         <S.ItemWrapper>
           <S.FlexWrapper>
             <S.Avatar src="/images/avatar.png" />

@@ -3,8 +3,10 @@ import { LikeOutlined, DislikeOutlined } from "@ant-design/icons";
 import ReactPlayer from "react-player";
 
 export const Wrapper = styled.div`
-  width: 800PX;
   margin: 100px;
+  max-width: 800px;
+  width: 90%;
+  margin: 10px auto;
 `;
 
 export const CardWrapper = styled.div`

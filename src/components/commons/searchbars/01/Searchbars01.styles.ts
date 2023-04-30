@@ -10,13 +10,14 @@ export const Searchbar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 export const FireFilledIcon = styled(FireFilled)`
   color: #5729ff;
   font-size: 30px;
   cursor: pointer;
-
   :hover {
     color: red;
   }

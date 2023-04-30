@@ -1,17 +1,25 @@
 import styled from "@emotion/styled";
 import { Rate, Modal } from "antd";
 
+export const Wrapper = styled.div`
+  width: 90%;
+  margin: 0px 10px;
+  margin-bottom: 40px;
+`;
+
 export const ItemWrapper = styled.div`
   width: 800px;
-  margin: 0px 100px;
-  padding-top: 20px;
+  margin: 20px 10px;
+  padding: 10px;
   height: 128px;
   border-bottom: 1px solid lightgray;
+ 
 `;
 
 export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  
 `;
 
 export const Avatar = styled.img`

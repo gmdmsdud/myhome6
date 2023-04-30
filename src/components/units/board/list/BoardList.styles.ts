@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 import { ITextTokenProps } from "./BoardList.types";
 
 export const Wrapper = styled.div`
-  width: 800px;
-  margin: 10px;
+  max-width: 1024px;
+  width: 90%;
+  margin: 10px auto;
+
 `;
 
 export const TableTop = styled.div`
@@ -28,22 +30,22 @@ export const Row = styled.div`
 `;
 
 export const ColumnHeaderBasic = styled.div`
-  width: 15%;
+  width: 20%;
   text-align: center;
 `;
 
 export const ColumnHeaderTitle = styled.div`
-  width: 65%;
+  width: 60%;
   text-align: center;
 `;
 
 export const ColumnBasic = styled.div`
-  width: 15%;
+  width: 19%;
   text-align: center;
 `;
 
 export const ColumnTitle = styled.div`
-  width: 70%;
+  width: 60%;
   text-align: center;
   cursor: pointer;
 
@@ -56,13 +58,19 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 10px;
 `;
 
-export const PencilIcon = styled.img``;
+export const PencilIcon = styled.img`
+@media (max-width: 425px) 
+  {
+    display: none;
+  }
+  `;
 
 export const Button = styled.button`
-  width: 171px;
+  max-width: 171px;
+  width: auto;
   height: 52px;
   background-color: white;
   border-radius: 15px;
@@ -70,7 +78,6 @@ export const Button = styled.button`
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
-
   :hover {
     background-color: #f5f2fc;
   }
@@ -79,3 +86,5 @@ export const Button = styled.button`
 export const TextToken = styled.span`
   color: ${(props: ITextTokenProps) => (props.isMatched ? "red" : "black")};
 `;
+
+
