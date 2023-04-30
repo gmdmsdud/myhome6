@@ -3,20 +3,27 @@ import { Modal } from "antd";
 import { ISubmitButtonProps } from "./BoardWrite.types";
 import DaumPostcode from "react-daum-postcode";
 
+export const MiddleWrapper =styled.div `
+width:90%
+align-items: center;
+`;
+
 export const Wrapper = styled.div`
-  width: 800px;
+  max-width: 800px;
   /* height: 1847px; */
   border: 1px solid black;
   margin: 100px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 102px;
-  padding-right: 102px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
   box-shadow: 0px 0px 10px gray;
+  padding:auto;
+  
 `;
 
 export const Title = styled.div`
@@ -26,7 +33,8 @@ export const Title = styled.div`
 `;
 
 export const WriterWrapper = styled.div`
-  width: 100%;
+  width: 600px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,14 +42,14 @@ export const WriterWrapper = styled.div`
 `;
 
 export const Writer = styled.input`
-  width: 280px;
+width: 100%;
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
 `;
 
 export const Password = styled.input`
-  width: 280px;
+  width: 100%;
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
@@ -54,7 +62,9 @@ export const Label = styled.div`
 `;
 
 export const InputWrapper = styled.div`
-  padding-top: 40px;
+ 
+padding-top: 40px;
+
 `;
 
 export const Subject = styled.input`
@@ -72,9 +82,12 @@ export const Contents = styled.textarea`
   border: 1px solid #bdbdbd;
 `;
 
+
 export const ZipcodeWrapper = styled.div`
-  display: flex;
+width: 600px;
+display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const Zipcode = styled.input`

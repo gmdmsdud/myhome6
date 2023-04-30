@@ -5,7 +5,7 @@ import Uploads01 from "../../../commons/uploads/01/Uploads01.container";
 
 export default function BoardWriteUI(props: IBoardWriteUIProps) {
   return (
-    <>
+    <S.MiddleWrapper>
       {props.isOpen && (
         <S.AddressModal visible={true}>
           <S.AddressSearchInput onComplete={props.onCompleteAddressSearch} />
@@ -14,11 +14,12 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
       <S.Wrapper>
         <S.Title>{props.isEdit ? "게시글 수정" : "게시글 등록"}</S.Title>
         <S.WriterWrapper>
+         
           <S.InputWrapper>
             <S.Label>작성자</S.Label>
             <S.Writer
               type="text"
-              placeholder="이름을 적어주세요."
+              placeholder="이름을 적어주세요. "
               onChange={props.onChangeWriter}
               defaultValue={props.data?.fetchBoard.writer ?? ""}
               readOnly={!!props.data?.fetchBoard.writer}
@@ -29,7 +30,7 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
             <S.Label>비밀번호</S.Label>
             <S.Password
               type="password"
-              placeholder="비밀번호를 작성해주세요."
+              placeholder="비밀번호를 작성해주세요.   "
               onChange={props.onChangePassword}
             />
             <S.Error>{props.passwordError}</S.Error>
@@ -54,6 +55,8 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
           />
           <S.Error>{props.contentsError}</S.Error>
         </S.InputWrapper>
+        
+        
         <S.InputWrapper>
           <S.Label>주소</S.Label>
           <S.ZipcodeWrapper>
@@ -68,14 +71,15 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
               props.address ||
               (props.data?.fetchBoard.boardAddress?.address ?? "")
             }
-          />
+            />
           <S.Address
             onChange={props.onChangeAddressDetail}
             defaultValue={
               props.data?.fetchBoard.boardAddress?.addressDetail ?? ""
             }
-          />
+            />
         </S.InputWrapper>
+      
         <S.InputWrapper>
           <S.Label>유튜브</S.Label>
           <S.Youtube
@@ -112,8 +116,8 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
         </S.ButtonWrapper>
       </S.Wrapper>
 
-      
+
       <div>.</div>
-    </>
+    </S.MiddleWrapper>
   );
 }

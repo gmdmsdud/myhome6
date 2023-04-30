@@ -4,10 +4,12 @@ import LayoutNavigation from "./navigation/LayoutNavigation.container";
 import styled from "@emotion/styled";
 
 const Body = styled.div`
+
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 `;
 
 interface ILayoutProps {
