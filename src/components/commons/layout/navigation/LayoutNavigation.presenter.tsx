@@ -6,7 +6,7 @@ const NAVIGATION_MENUS = [
  
   { name: "자유게시판", page: "/boards" },
   { name: "랜덤강아지", page: "/openapis" },
-  { name: "나의파이어베이스", page: "/myfirebase" },
+  { name: "방명록", page: "/myfirebase" },
   { name: "MYPAGE", page: "/" },
 ];
 

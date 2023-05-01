@@ -66,3 +66,5 @@ export const Button = styled.button`
     background-color: #f5f2fc;
   }
 `;
+
+

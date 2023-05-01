@@ -13,7 +13,7 @@ export default function BoardListUI(props: IBoardListUIProps) {
         refetchBoardsCount={props.refetchBoardsCount}
         onChangeKeyword={props.onChangeKeyword}
       />
-      <S.TableTop />
+      <S.TableTop /> 
       <S.Row>
         <S.ColumnHeaderBasic>작성자</S.ColumnHeaderBasic>
         
