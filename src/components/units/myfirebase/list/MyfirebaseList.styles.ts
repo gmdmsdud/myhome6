@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-  width: 1200px;
+  max-width: 800px;
+  width: 90%;
   margin: 100px;
 `;
 
@@ -21,24 +22,36 @@ export const Row = styled.div`
   line-height: 52px;
   border-bottom: 1px solid gray;
 `;
-
+export const ColumnHeaderSmall = styled.div`
+  width: 10%;
+  text-align: center;
+`;
 export const ColumnHeaderBasic = styled.div`
-  width: 10%;
+  width: 25%;
   text-align: center;
 `;
-
+export const ColumnHeaderMiddle = styled.div`
+  width: 15%;
+  text-align: center;
+`;
 export const ColumnHeaderTitle = styled.div`
-  width: 70%;
+  width: 50%;
   text-align: center;
 `;
-
-export const ColumnBasic = styled.div`
+export const ColumnSmall = styled.div`
   width: 10%;
   text-align: center;
 `;
-
+export const ColumnBasic = styled.div`
+  width: 25%;
+  text-align: center;
+`;
+export const ColumnMiddle = styled.div`
+  width: 15%;
+  text-align: center;
+`;
 export const ColumnTitle = styled.div`
-  width: 70%;
+  width: 50%;
   text-align: center;
 `;
 

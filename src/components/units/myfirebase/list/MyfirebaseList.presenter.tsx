@@ -7,18 +7,18 @@ export default function MyfirebaseListUI(props: IMyfirebaseListUIProps) {
     <S.Wrapper>
      
       <S.Row>
-        <S.ColumnHeaderBasic>번호</S.ColumnHeaderBasic>
+        <S.ColumnHeaderSmall>번호</S.ColumnHeaderSmall>
         <S.ColumnHeaderBasic>제목</S.ColumnHeaderBasic>
         <S.ColumnHeaderTitle>내용</S.ColumnHeaderTitle>
-        <S.ColumnHeaderBasic>작성자</S.ColumnHeaderBasic>
+        <S.ColumnHeaderMiddle>작성자</S.ColumnHeaderMiddle>
         
       </S.Row>
       {props.dataBoards?.map((el: any, index: number) => (
         <S.Row key={uuidv4()}>
-          <S.ColumnBasic>{index + 1}</S.ColumnBasic>
+          <S.ColumnSmall>{index + 1}</S.ColumnSmall>
           <S.ColumnBasic>{el.title}</S.ColumnBasic>
           <S.ColumnTitle>{el.contents}</S.ColumnTitle>
-          <S.ColumnBasic>{el.writer}</S.ColumnBasic>
+          <S.ColumnMiddle>{el.writer}</S.ColumnMiddle>
          
         </S.Row>
       ))}
