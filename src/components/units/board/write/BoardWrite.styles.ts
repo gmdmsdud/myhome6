@@ -4,37 +4,34 @@ import { ISubmitButtonProps } from "./BoardWrite.types";
 import DaumPostcode from "react-daum-postcode";
 
 export const MiddleWrapper =styled.div `
-width:90%
-align-items: center;
+max-width: 750px;
+width:90%;
+margin: 10px auto;
 `;
 
 export const Wrapper = styled.div`
-  max-width: 800px;
+  
   /* height: 1847px; */
   border: 1px solid black;
-  margin: 100px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: 100px auto;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
   box-shadow: 0px 0px 10px gray;
-  padding:auto;
+  padding:40px;
   
 `;
 
 export const Title = styled.div`
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 30px;
 `;
 
 export const WriterWrapper = styled.div`
-  width: 600px;
-  
+
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,14 +39,17 @@ export const WriterWrapper = styled.div`
 `;
 
 export const Writer = styled.input`
-width: 100%;
+width: 95%;
+  max-width: 250px;
+ 
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
 `;
 
 export const Password = styled.input`
-  width: 100%;
+width: 95%;
+max-width: 250px;
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
@@ -62,20 +62,23 @@ export const Label = styled.div`
 `;
 
 export const InputWrapper = styled.div`
- 
+width: 100%;
 padding-top: 40px;
+align-items: center;
 
 `;
 
 export const Subject = styled.input`
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
 `;
 
 export const Contents = styled.textarea`
-  width: 600px;
+width: 100%;
+max-width: 600px;
   height: 480px;
   padding-left: 16px;
   padding: 14px;
@@ -84,7 +87,8 @@ export const Contents = styled.textarea`
 
 
 export const ZipcodeWrapper = styled.div`
-width: 600px;
+width: 100%;
+  max-width: 600px;
 display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -107,7 +111,8 @@ export const SearchButton = styled.button`
 `;
 
 export const Address = styled.input`
-  width: 600px;
+width: 100%;
+max-width: 600px;
   height: 52px;
   margin-top: 16px;
   padding-left: 16px;
@@ -115,14 +120,16 @@ export const Address = styled.input`
 `;
 
 export const Youtube = styled.input`
-  width: 600px;
+width: 100%;
+max-width: 600px;
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
 `;
 
 export const ImageWrapper = styled.div`
-  width: 600px;
+width: 100%;
+max-width: 600px;
   padding-top: 40px;
 `;
 
@@ -137,7 +144,8 @@ export const UploadButton = styled.button`
 `;
 
 export const OptionWrapper = styled.div`
-  width: 600px;
+width: 100%;
+max-width: 600px;
   padding-top: 40px;
 `;
 

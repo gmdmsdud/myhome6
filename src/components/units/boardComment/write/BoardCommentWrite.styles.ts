@@ -4,8 +4,8 @@ import { Rate } from "antd";
 export const Wrapper = styled.div`
   max-width: 800px;
   width: 90%;
-  margin: 0px 100px;
-  margin-bottom: 20px;
+  margin: 10px 100px;
+  padding-bottom: 30px;
 `;
 
 export const PencilIcon = styled.img``;
