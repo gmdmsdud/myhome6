@@ -56,7 +56,6 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
           <S.Error>{props.contentsError}</S.Error>
         </S.InputWrapper>
         
-        
         <S.InputWrapper>
           <S.Label>주소</S.Label>
           <S.ZipcodeWrapper>

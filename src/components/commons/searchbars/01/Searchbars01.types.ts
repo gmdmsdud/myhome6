@@ -10,7 +10,7 @@ export interface ISearchbars01Props {
   refetch: (
     variables: Partial<IQueryFetchBoardsArgs>
   ) => Promise<ApolloQueryResult<Pick<IQuery, "fetchBoards">>>;
-  refetchBoardsCount: (
+   refetchBoardsCount: (
     variables: Partial<IQueryFetchBoardsCountArgs>
   ) => Promise<ApolloQueryResult<Pick<IQuery, "fetchBoardsCount">>>;
   onChangeKeyword: (value: string) => void;
